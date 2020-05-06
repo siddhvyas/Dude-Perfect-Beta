@@ -1,6 +1,4 @@
-*{
-	margin:0px; padding:0px;
-}
+header{font-family:'Voces';}
 
 .main-head{
 	margin:0px; padding:0px;
@@ -27,6 +25,8 @@
 	grid-template-rows: 55px 5px;
 }
 
+.back:hover{ background-color:#1A1110; }
+
 .header-elements{
 	margin:0px; padding:0px;
 	text-align:center;
@@ -44,10 +44,41 @@ a:hover.head-element{
 	color:#55cfae;
 }
 
-#language{
-	margin-top:15px;
-	padding-top:15px;
-	padding-left:5px;
+.language{
+	height:40px;
+	width:70px;
+    background-color:lightgrey;
+}
+
+option.language{
+}
+
+.dropdown { position:relative; }
+.dropdown:hover{ background-color:#1A1110; }
+
+.dropdown-content{
+	display:none;
+	margin-top:17px;
+	position:absolute;
+}
+
+.dropdown-content a{
+	display:block;
+	height:40px;
+	width:243px;
+	background-color:black;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	padding-top:20px;
+	z-index:10;
+}
+
+.dropdown:hover .dropdown-content {	display:block; }
+
+.dropdown-content a:hover{
+	color:#55cfae;
+	background-color:#1A1110;
 }
 
 .right-icons{
